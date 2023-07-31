@@ -6,7 +6,7 @@
 /*   By: amenses- <amenses-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 00:57:55 by amenses-          #+#    #+#             */
-/*   Updated: 2023/07/03 18:19:13 by amenses-         ###   ########.fr       */
+/*   Updated: 2023/07/31 20:07:37 by amenses-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,14 @@ static int	ft_x_atoi_ptr(char **x)
 	int		i;
 
 	n = 0;
+	if (!x || !*x || **x != ',')
+		return (DMCOLOR);
 	*x = ft_strchr(*x, 'x');
 	if (*x)
 	{
 		(*x)++;
 		i = 0;
-		while (i < 6 && **x)
+		while (i < 6 && **x && !((**x >= 9 && **x <= 13) || **x == ' '))
 		{
 			if (**x >= 'A' && **x <= 'Z')
 				n |= ft_findchr("0123456789ABCDEF", **x) << (4 * (5 - i));
@@ -55,10 +57,10 @@ static int	ft_x_atoi_ptr(char **x)
 			i++;
 			(*x)++;
 		}
+		n >>= 4 * (6 - i);
 		return (n);
 	}
-	else
-		return (DMCOLOR);
+	return (DMCOLOR);
 }
 
 t_point	*ft_get_points(t_model *m)
@@ -71,7 +73,7 @@ t_point	*ft_get_points(t_model *m)
 	ft_bzero(e, sizeof(double) * 2);
 	e[0] = (double) !(m->ncols % 2) * 0.5;
 	e[1] = (double) !(m->nrows % 2) * 0.5;
-	p = malloc(sizeof(t_point) * m->nelem);
+	p = ft_calloc(m->nelem, sizeof(t_point));
 	if (!p)
 		return (ft_error("Error: memory allocation failed"), NULL);
 	i = -1;
@@ -82,9 +84,7 @@ t_point	*ft_get_points(t_model *m)
 		if (i % m->ncols == 0)
 			tmp = m->map[i / m->ncols];
 		p[i].z = ft_atoi_ptr(&tmp);
-		if (*tmp == ',')
-			p[i].color[0] = ft_x_atoi_ptr(&tmp);
-		p[i].color[1] = 0;
+		p[i].color[0] = ft_x_atoi_ptr(&tmp);
 	}
 	p = ft_adjust_z(p, *m);
 	return (p);
