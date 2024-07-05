@@ -1,5 +1,15 @@
 # FDF - Wireframe Model
 
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Objectives](#objectives)
+3. [Features](#features)
+4. [User Controls](#user-controls)
+5. [How to use](#how-to-use)
+6. [Screenshots](#screenshots)
+7. [Acknowledgments](#acknowledgments)
+
 ## Overview
 
 The FDF project is a basic computer graphics project using the MiniLibX library. It involves creating a simple wireframe model of a landscape by linking various points (x, y, z) with line segments. The project aims to familiarize you with the MiniLibX library and the basics of graphics programming, such as placing points in space and viewing the scene from a specific viewpoint. Bonus requirements included.
@@ -26,7 +36,7 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
 - **Color Rendering Mode**: Reads the color from the input file and creates color gradients over the segments between different points. Additional default color mode, assigned based on the height of each point.
 - **Multiple Projections (Bonus)**: Includes additional weak-perspective projection.
 
-## Controls
+## User Controls
 
 ### Mouse Controls
 
@@ -43,7 +53,7 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
 - **S**: Toggle depth-shade mode.
 - **ESC**: Close the window and quit the program.
 
-## Getting Started
+## How to use
 
 ### Installation
 
@@ -58,6 +68,20 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
 3. Run the project with a test map:
    ```sh
    ./fdf maps/test_maps/42.fdf
+
+## Screenshots
+
+- ![Depth shade on. Perspective proj](images_demo/100_6_dcolor_shade_persp.png)
+- ![Top view. Perspective proj. Depth shade on. Default color](images_demo/100_6_topview_dcolor_shade_persp.png)
+- ![Isometric proj. Default color](images_demo/42_iso_defaultcolor.png)
+- ![Isomatric proj. Color off](images_demo/42_iso_nocolor.png)
+- ![Perspective proj. Default color](images_demo/42_perspective_dcolor.png)
+- ![Top view. Perspective proj. Depth shade on](images_demo/42_topview_dcolor_shade_persp.png)
+- ![Bottom view. Perspective proj. Depth shade on. Default color](images_demo/julia_frombelow_dcolor_shade_persp_2.png)
+- ![Bottom view. Perspective proj. Depth shade on. Default color](images_demo/julia_frombelow_dcolor_shade_persp.png)
+- ![Perspective proj. Map color. Depth shade on](images_demo/julia_mapcolor_shade_persp.png)
+- ![Perspective proj. Map color. Depth shade on](images_demo/t1_color_shade_persp_1.png)
+
 
 ## Acknowledgements
 
