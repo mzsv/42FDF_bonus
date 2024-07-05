@@ -1,4 +1,4 @@
-# FDF Project
+# FDF - Wireframe Model
 
 ## Overview
 
@@ -59,7 +59,7 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
    ```sh
    ./fdf maps/test_maps/42.fdf
 
-## Acknowledgments
+## Acknowledgements
 
 - The 42 School for providing the project specifications and environment.
 
