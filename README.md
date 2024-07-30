@@ -8,7 +8,7 @@
 4. [User Controls](#user-controls)
 5. [How to use](#how-to-use)
 6. [Screenshots](#screenshots)
-7. [Acknowledgments](#acknowledgments)
+7. [Acknowledgements](#acknowledgements)
 
 ## Overview
 
