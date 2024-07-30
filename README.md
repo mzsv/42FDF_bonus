@@ -72,6 +72,7 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
 ## Screenshots
 
 - ![Bottom view. Perspective proj. Depth shade on. Default color](images_demo/julia_frombelow_dcolor_shade_persp.png)
+- ![Bottom view. Perspective proj. Depth shade on. Default color](images_demo/julia_frombelow_dcolor_shade_persp_2.png)
 - ![Perspective proj. Map color. Depth shade on](images_demo/julia_mapcolor_shade_persp.png)
 - ![Perspective proj. Map color. Depth shade on](images_demo/t1_color_shade_persp_1.png)
 - ![Depth shade on. Perspective proj](images_demo/100_6_dcolor_shade_persp.png)
@@ -80,7 +81,6 @@ The FDF project is a basic computer graphics project using the MiniLibX library.
 - ![Isomatric proj. Color off](images_demo/42_iso_nocolor.png)
 - ![Perspective proj. Default color](images_demo/42_perspective_dcolor.png)
 - ![Top view. Perspective proj. Depth shade on](images_demo/42_topview_dcolor_shade_persp.png)
-- ![Bottom view. Perspective proj. Depth shade on. Default color](images_demo/julia_frombelow_dcolor_shade_persp_2.png)
 
 ## Acknowledgements
 
